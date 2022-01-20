@@ -22,7 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		11F437CB2799C62A00DC41B9 /* VerifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F437CA2799C62A00DC41B9 /* VerifierTests.swift */; };
 		11F437D42799C65200DC41B9 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F437D32799C65200DC41B9 /* AppDelegateTests.swift */; };
 		242D21D1245C3853005DAEA8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D21D0245C3853005DAEA8 /* Logger.swift */; };
 		242D2276245D62D8005DAEA8 /* WalletUserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24780B06242DFCD9003BB26C /* WalletUserStorage.swift */; };
@@ -422,7 +421,6 @@
 
 /* Begin PBXFileReference section */
 		11F437C82799C62A00DC41B9 /* VerifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11F437CA2799C62A00DC41B9 /* VerifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifierTests.swift; sourceTree = "<group>"; };
 		11F437D32799C65200DC41B9 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		242D21D0245C3853005DAEA8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		242D227A245D6557005DAEA8 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
@@ -732,7 +730,6 @@
 		11F437C92799C62A00DC41B9 /* VerifierTests */ = {
 			isa = PBXGroup;
 			children = (
-				11F437CA2799C62A00DC41B9 /* VerifierTests.swift */,
 				11F437D32799C65200DC41B9 /* AppDelegateTests.swift */,
 			);
 			path = VerifierTests;
@@ -1941,7 +1938,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F437D42799C65200DC41B9 /* AppDelegateTests.swift in Sources */,
-				11F437CB2799C62A00DC41B9 /* VerifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

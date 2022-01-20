@@ -15,7 +15,9 @@ import XCTest
 
 public class AppDelegateTests: XCTestCase {
     
-    public func testTest() {
+    public func testShouldDefaultFirstLauchIsFalse() {
         let appDelegate = AppDelegate()
+
+        XCTAssertFalse(appDelegate.isFirstLaunch)
     }
 }
