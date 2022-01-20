@@ -23,13 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var navigationController = NavigationController(rootViewController: VerifierHomescreenViewController())
 
+    open func initializeSDK() {
+        CovidCertificateSDK.initialize(environment: Environment.current.sdkEnvironment, apiKey: Environment.current.appToken)
+    }
+    
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Pre-populate isFirstLaunch for users which already installed the app before we introduced this flag
         if VerifierUserStorage.shared.hasCompletedOnboarding {
             isFirstLaunch = false
         }
 
-        CovidCertificateSDK.initialize(environment: Environment.current.sdkEnvironment, apiKey: Environment.current.appToken)
+        initializeSDK()
 
         // Reset keychain on first launch
         if isFirstLaunch {
