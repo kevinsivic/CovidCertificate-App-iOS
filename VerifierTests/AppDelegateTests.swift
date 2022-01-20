@@ -15,8 +15,17 @@ import XCTest
 
 public class AppDelegateTests: XCTestCase {
     
-    public func testShouldDefaultFirstLauchIsFalse() {
+    public func testShouldDefaultFirstLaunchIsFalse() {
         let appDelegate = AppDelegate()
+
+        XCTAssertFalse(appDelegate.isFirstLaunch)
+    }
+
+    public func testApplicationFinishedLaunchingShouldSucceed() {
+        let appDelegate = AppDelegate()
+        appDelegate.isFirstLaunch = true
+
+        appDelegate.application(UIApplication.shared, didFinishLaunchingWithOptions: [:])
 
         XCTAssertFalse(appDelegate.isFirstLaunch)
     }

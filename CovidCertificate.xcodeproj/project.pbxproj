@@ -313,6 +313,8 @@
 		DCF9C35926562E7F00E34481 /* OnboardingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8ABDF4264A65C100FDE0E1 /* OnboardingInfoView.swift */; };
 		DCF9C3652656395A00E34481 /* config_check.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF9C3622656395A00E34481 /* config_check.json */; };
 		DCF9C3662656395A00E34481 /* config_wallet.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF9C3632656395A00E34481 /* config_wallet.json */; };
+		F026313EDA108E27E3CE7F77 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263659F88602F1F56936CE /* main.swift */; };
+		F0263EBEF61403479554921A /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0263D4F56BE9DBA01E0FB7C /* TestingAppDelegate.swift */; };
 		F20E4F31268208DB00D14609 /* PushNotificationPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E4F30268208DB00D14609 /* PushNotificationPopupView.swift */; };
 		F234B5B927610DA100B361DF /* IconTextInfoBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234B5B827610DA100B361DF /* IconTextInfoBoxView.swift */; };
 		F803F4DC26A9731A0068311C /* UIStateManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F803F4DB26A9731A0068311C /* UIStateManagerTests.swift */; };
@@ -626,6 +628,8 @@
 		DCEDD04C273931EA0008B8F8 /* WalletScanCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletScanCounter.swift; sourceTree = "<group>"; };
 		DCF9C3622656395A00E34481 /* config_check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config_check.json; sourceTree = "<group>"; };
 		DCF9C3632656395A00E34481 /* config_wallet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config_wallet.json; sourceTree = "<group>"; };
+		F0263659F88602F1F56936CE /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F0263D4F56BE9DBA01E0FB7C /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		F20E4F30268208DB00D14609 /* PushNotificationPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationPopupView.swift; sourceTree = "<group>"; };
 		F234B5B827610DA100B361DF /* IconTextInfoBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextInfoBoxView.swift; sourceTree = "<group>"; };
 		F803F4DB26A9731A0068311C /* UIStateManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStateManagerTests.swift; sourceTree = "<group>"; };
@@ -731,6 +735,7 @@
 			isa = PBXGroup;
 			children = (
 				11F437D32799C65200DC41B9 /* AppDelegateTests.swift */,
+				F0263D4F56BE9DBA01E0FB7C /* TestingAppDelegate.swift */,
 			);
 			path = VerifierTests;
 			sourceTree = "<group>";
@@ -1095,6 +1100,7 @@
 			children = (
 				6EC1735C2642A1A1002E27DB /* Screens */,
 				6EC173582642A0AD002E27DB /* Logic */,
+				F0263659F88602F1F56936CE /* main.swift */,
 			);
 			path = Verifier;
 			sourceTree = "<group>";
@@ -1938,6 +1944,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F437D42799C65200DC41B9 /* AppDelegateTests.swift in Sources */,
+				F0263EBEF61403479554921A /* TestingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2062,6 +2069,7 @@
 				6EC1735F2642A1B4002E27DB /* VerifierHomescreenViewController.swift in Sources */,
 				6EC1732526429E31002E27DB /* NSMutableAttributedString+CC.swift in Sources */,
 				DC8AC73E265291C1005A2543 /* Strings+Generated.swift in Sources */,
+				F026313EDA108E27E3CE7F77 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
