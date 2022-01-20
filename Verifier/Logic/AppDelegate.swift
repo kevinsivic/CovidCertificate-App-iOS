@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var navigationController = NavigationController(rootViewController: VerifierHomescreenViewController())
 
-    open func initializeSDK() {
+    open func initializeCovidCertificateSDK() {
         CovidCertificateSDK.initialize(environment: Environment.current.sdkEnvironment, apiKey: Environment.current.appToken)
     }
     
@@ -33,11 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             isFirstLaunch = false
         }
 
-        initializeSDK()
+        initializeCovidCertificateSDK()
 
         // Reset keychain on first launch
         if isFirstLaunch {
-            Keychain().deleteAll()
+            getKeychain().deleteAll()
             isFirstLaunch = false
             // dont show light certificate update boarding on first launch
             VerifierUserStorage.shared.hasCompletedLightCertificateUpdateBoarding = true
@@ -64,6 +64,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         return true
+    }
+
+    func getKeychain() -> KeychainProtocol {
+        Keychain()
     }
 
     func application(_: UIApplication,
