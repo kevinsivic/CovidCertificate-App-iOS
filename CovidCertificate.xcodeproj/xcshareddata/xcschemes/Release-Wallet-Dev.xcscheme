@@ -94,6 +94,16 @@
                ReferencedContainer = "container:CovidCertificate.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "11F437C72799C62A00DC41B9"
+               BuildableName = "VerifierTests.xctest"
+               BlueprintName = "VerifierTests"
+               ReferencedContainer = "container:CovidCertificate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
